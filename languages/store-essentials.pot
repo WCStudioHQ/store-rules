@@ -1,0 +1,109 @@
+# Copyright (C) 2025 WC Studio
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Essentials 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wcstudio.com/plugins/store-essentials/\n"
+"POT-Creation-Date: 2025-01-09 07:09:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Store Essentials"
+msgstr ""
+
+#: includes/WCSES_Admin.php:48 includes/WCSES_Admin.php:49
+msgid "Sorting Toggle"
+msgstr ""
+
+#: includes/WCSES_Admin.php:56 includes/WCSES_Admin.php:151
+msgid "Min Max Quantity Settings"
+msgstr ""
+
+#: includes/WCSES_Admin.php:57
+msgid "Min Max Quantity"
+msgstr ""
+
+#: includes/WCSES_Admin.php:78
+msgid "Shop Sorting Toggle"
+msgstr ""
+
+#: includes/WCSES_Admin.php:82
+msgid "Hide Sorting Options"
+msgstr ""
+
+#: includes/WCSES_Admin.php:87
+msgid "Do not hide"
+msgstr ""
+
+#: includes/WCSES_Admin.php:91
+msgid "Hide Before Shop Loop"
+msgstr ""
+
+#: includes/WCSES_Admin.php:95
+msgid "Hide After Shop Loop"
+msgstr ""
+
+#: includes/WCSES_Admin.php:99
+msgid "Hide Both"
+msgstr ""
+
+#: includes/WCSES_Admin.php:155
+msgid "Minimum Quantity"
+msgstr ""
+
+#: includes/WCSES_Admin.php:157
+msgid "Enter minimum quantity"
+msgstr ""
+
+#: includes/WCSES_Admin.php:161
+msgid "Maximum Quantity"
+msgstr ""
+
+#: includes/WCSES_Admin.php:163
+msgid "Enter maximum quantity"
+msgstr ""
+
+#: includes/WCSES_Frontend.php:98
+#. Translators: %d is the minimum quantity required for this product.
+msgid "You need to add at least %d of this product."
+msgstr ""
+
+#: includes/WCSES_Frontend.php:104
+#. Translators: %d is the maximum quantity allowed for the product.
+msgid "You cannot add more than %d of this product."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wcstudio.com/plugins/store-essentials/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A lightweight plugin to toggle the visibility of WooCommerce sorting "
+"options on shop and archive pages."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WC Studio"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wcstudio.com/"
+msgstr ""

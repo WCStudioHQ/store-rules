@@ -1,0 +1,64 @@
+{
+  "name": "woocopilot/store-rules",
+  "description": "Easily manage WooCommerce role-based discounts. Set percentage discounts for different user roles and automate price adjustments.",
+  "homepage": "https://wcstudio.com/plugins/store-ruless/",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-or-later",
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "url": "git@github.com:WCStudioHQ/woocopilot-sniffs.git",
+      "type": "github"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "woocopilot/woocopilot-sniffs": "dev-master",
+    "codeception/lib-innerbrowser": "^1.0",
+    "codeception/module-asserts": "^1.1",
+    "codeception/module-cli": "^1.0",
+    "codeception/module-db": "^1.0",
+    "codeception/module-filesystem": "^1.0",
+    "codeception/module-phpbrowser": "^1.0",
+    "codeception/module-rest": "^1.2",
+    "codeception/module-webdriver": "^1.0",
+    "codeception/util-universalframework": "^1.0",
+    "level-level/wp-browser-woocommerce": "^0.1.8",
+    "lucatume/wp-browser": "^3.1",
+    "phpcompatibility/php-compatibility": "9.3.5"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/*": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "WCSTUDIO_STORE_RULES\\": "includes/"
+    }
+  },
+  "autoload-dev": {},
+  "scripts": {
+    "phpcs": "@php ./vendor/bin/phpcs --standard=phpcs.xml -s -v",
+    "phpcbf": "@php ./vendor/bin/phpcbf --standard=phpcs.xml -v",
+    "selenium:start": "selenium-server -port 4444",
+    "test:build": "@php ./vendor/bin/codecept build",
+    "test:acceptance": "@php ./vendor/bin/codecept run acceptance",
+    "test:functional": "@php ./vendor/bin/codecept run functional",
+    "test:wpunit": "@php ./vendor/bin/codecept run wpunit",
+    "test": "composer test:acceptance && composer test:functional && composer test:wpunit",
+    "test:gen:acceptance": "@php vendor/bin/codecept generate:cept",
+    "test:gen:func": "@php vendor/bin/codecept generate:cest",
+    "test:gen:wpunit": "@php vendor/bin/codecept generate:wpunit wpunit",
+    "test:clean": "@php ./vendor/bin/codecept clean",
+    "test:coverage": "@php ./vendor/bin/codecept run wpunit --coverage --coverage-xml --coverage-html",
+    "test:generate": "@php vendor/bin/codecept generate:scenarios",
+    "codecept": "@php vendor/bin/codecept"
+  }
+}
