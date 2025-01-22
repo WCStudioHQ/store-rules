@@ -22,7 +22,7 @@ Key Features:
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/store-rules` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Click "WooCommerce -> Role Discounts" from  left menu.
 4. From the dropdown select any role.
@@ -42,5 +42,5 @@ An answer to that question.
 Yes, it's actively tested and working up to PHP 7.2 to 8.3.
 
 == Changelog ==
-= 1.0.0 (30 December 2024) =
+= 1.0.0 (22 December 2025) =
 * Initial Release
