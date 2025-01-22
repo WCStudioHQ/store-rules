@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require_once __DIR__ . '/vendor/autoload.php';
-use WCSTUDIO_STORE_RULES\WCSSR_Plugin;
+use WCSSR\WCSSR_Plugin;
 
 /**
  * Initializes the Store Rules plugin.

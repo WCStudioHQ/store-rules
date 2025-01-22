@@ -1,5 +1,5 @@
 === Store Rules ===
-Contributors: wcstudio
+Contributors: wcstudiohq
 Tags: mini plugin, mini,role base discount, woocommerce.
 Tested up to: 6.7
 Stable tag: 1.0.0

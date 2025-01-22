@@ -1,6 +1,6 @@
 <?php
 
-namespace WCSTUDIO_STORE_RULES;
+namespace WCSSR;
 
 defined( 'ABSPATH' ) || exit;
 /**

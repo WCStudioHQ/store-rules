@@ -1,6 +1,6 @@
 <?php
 
-namespace WCSTUDIO_STORE_RULES;
+namespace WCSSR;
 
 /**
  * Class WCSSR_Admin
@@ -37,7 +37,7 @@ class WCSSR_Admin {
 			'Role Discounts',
 			'manage_options',
 			'role-based-discounts',
-			array( $this, 'admin_page' )
+			array( $this, 'wcssr_admin_page' )
 		);
 	}
 	/**
@@ -45,7 +45,7 @@ class WCSSR_Admin {
 	 *
 	 * @return array An array of discount rules, or an empty array if no rules exist.
 	 */
-	private function get_discount_rules() {
+	private function wcssr_get_discount_rules() {
 		return get_option( $this->option_name, array() );
 	}
 
@@ -56,10 +56,10 @@ class WCSSR_Admin {
 	 * - A form for adding or editing discount rules.
 	 * - A table displaying all existing discount rules.
 	 */
-	public function admin_page() {
+	public function wcssr_admin_page() {
 		settings_errors( 'role_based_discounts' );
 		$roles          = wp_roles()->get_names();
-		$discount_rules = $this->get_discount_rules();
+		$discount_rules = $this->wcssr_get_discount_rules();
 		$edit_id        = isset( $_GET['edit'] ) ? sanitize_text_field( wp_unslash( $_GET['edit'] ) ) : '';
 		$rule_to_edit   = null;
 		if ( $edit_id ) {
@@ -186,7 +186,7 @@ class WCSSR_Admin {
 		$rule_id                   = isset( $_POST['rule_id'] ) ? sanitize_text_field( wp_unslash( $_POST['rule_id'] ) ) : uniqid( 'rule_' );
 		$wcssr_role_name           = isset( $_POST['wcssr_role_name'] ) ? sanitize_text_field( wp_unslash( $_POST['wcssr_role_name'] ) ) : '';
 		$wcssr_discount_percentage = isset( $_POST['wcssr_discount_percentage'] ) ? floatval( wp_unslash( $_POST['wcssr_discount_percentage'] ) ) : 0;
-		$discount_rules            = $this->get_discount_rules();
+		$discount_rules            = $this->wcssr_get_discount_rules();
 		$duplicate_found           = false;
 		foreach ( $discount_rules as $existing_rule_id => $existing_rule ) {
 			if ( $existing_rule['wcssr_role_name'] === $wcssr_role_name && $existing_rule_id !== $rule_id ) {
@@ -239,7 +239,7 @@ class WCSSR_Admin {
 		$rule_id = isset( $_POST['rule_id'] ) ? sanitize_text_field( wp_unslash( $_POST['rule_id'] ) ) : '';
 
 		if ( $rule_id ) {
-			$discount_rules = $this->get_discount_rules();
+			$discount_rules = $this->wcssr_get_discount_rules();
 			if ( isset( $discount_rules[ $rule_id ] ) ) {
 				unset( $discount_rules[ $rule_id ] );
 				update_option( $this->option_name, $discount_rules );

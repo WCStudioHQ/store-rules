@@ -1,5 +1,5 @@
 <?php
-namespace WCSTUDIO_STORE_RULES;
+namespace WCSSR;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

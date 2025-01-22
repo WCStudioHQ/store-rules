@@ -9,12 +9,12 @@ class ComposerStaticInit27611ee271bc9f90a269c2ebe10e48e1
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
-            'WCSTUDIO_STORE_RULES\\' => 21,
+            'WCSSR\\' => 6,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'WCSTUDIO_STORE_RULES\\' => 
+        'WCSSR\\' => 
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),
@@ -22,10 +22,10 @@ class ComposerStaticInit27611ee271bc9f90a269c2ebe10e48e1
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'WCSTUDIO_STORE_RULES\\WCSSR_Admin' => __DIR__ . '/../..' . '/includes/WCSSR_Admin.php',
-        'WCSTUDIO_STORE_RULES\\WCSSR_Frontend' => __DIR__ . '/../..' . '/includes/WCSSR_Frontend.php',
-        'WCSTUDIO_STORE_RULES\\WCSSR_Functions' => __DIR__ . '/../..' . '/includes/WCSSR_Functions.php',
-        'WCSTUDIO_STORE_RULES\\WCSSR_Plugin' => __DIR__ . '/../..' . '/includes/WCSSR_Plugin.php',
+        'WCSSR\\WCSSR_Admin' => __DIR__ . '/../..' . '/includes/WCSSR_Admin.php',
+        'WCSSR\\WCSSR_Frontend' => __DIR__ . '/../..' . '/includes/WCSSR_Frontend.php',
+        'WCSSR\\WCSSR_Functions' => __DIR__ . '/../..' . '/includes/WCSSR_Functions.php',
+        'WCSSR\\WCSSR_Plugin' => __DIR__ . '/../..' . '/includes/WCSSR_Plugin.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
